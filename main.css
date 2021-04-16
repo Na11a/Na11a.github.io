@@ -1,127 +1,148 @@
-body{
-    margin-left: 5%;
-    margin-right: 5%;
-    background-color: silver;
+body {
+    background-color:silver;
 }
-section{
-    background-color: white;
-    width: 100%;
-    height: 450px;
-    position: relative;
-    border-top: black 1px solid;
+header, main, footer {
+    margin-left: 20%;
+    width: 80%;
+    background-color:white;
+    display: flex;
+    flex-wrap: wrap;
 }
-section.footer{
-    text-align: center;
-    background-color:red;
-    height: 100%;
-    border-top: black 1px solid;
+nav{
+    top: 0px;
     position: fixed;
-    width: 5%;
-    bottom: 0px;
+    width: 20%;
+    height: 100%;
     left: 0px;
+    background-color: red;
 }
-section.footer p{
-    margin-top: 500%;
+nav ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
 }
-section.half{
-    background-color: white;
-    width: 100%;
-    height: 225px;
-}
-
-div.main-info{
-    float: left;
-    width: 25%;
-    height: 100%;
-    text-align: center;
-    border: 1px solid black;
+nav ul li{
+    padding-top: 150px;
+    font-size: 32px;
 }
 
-div.content{
-    text-align: center;
-    float: left;
-    width: 60%;
-    height: 100%;
+header{
+    flex-direction:row;
+    justify-content: space-around;
 }
-div.content p{
-    height: 20%;
-    border-bottom: brown 1px solid;
-    color:black;
-    font-size: 48px;
+hr{
+
 }
-div#mail{
-    float: left;
-    text-align: center;
-    width: 14%;
-    height: 100%;
-    border:solid black 1px;
+.box-1 p {
+    padding-top: 5%;
+    text-transform: uppercase;
+
 }
-div#mail p{
-    text-align: center;
+p.name {
+    font-size: 35px;
+}
+p.job{
     font-size: 28px;
 }
-div#part1{
-    vertical-align: middle;
-    float: left;
-    width: 25%;
-    height: 100%;
+.box-2{
     text-align: center;
-    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.box-2 button {
+    padding: 5%;
+    background-color:brown;
+    font-size: medium;
+    margin-bottom: 5%;
 }
 
-div#part1 h3{
-    margin:20%;
-}
-h1 {
-    color:red;
-    text-align: center;
-}
-h3.content{
-    text-align: center;
-}
-h3{
-    font-size: 29px;
-}
-img{
-    margin-top: 10%;
-    margin-left: 20px;
-    width: 200px;
-    height: 300px;
-}
-td {
-    text-align: center;
+main{
+    display: flex;
+    flex-direction: column;
 }
 
-table{
-    width:100%;
-    height:100%;
+section.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-bottom: red 1px solid;
+
 }
-div.content-main{
+section.info p{
+    text-align: center;
+    flex-basis: 600px;
+    font-size: 18px
+}
+section.info h1 {
+    font-size: 32px;
+}
+div.articles{
+    flex-basis: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+}
+div.articles article.tehnical{
+    flex-basis: 200px;
     
+}
+div.articles article.tehnical h1{
     text-align: center;
-    float: left;
-    width: 74%;
-    height: 100%;
-
 }
-ul{
+div.lists{
+    display: flex;
+    flex-basis: 600px;
+    flex-direction: column;
+    
+}
+
+section.info ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+section.info ul li{
+    margin-bottom: 15px;
     text-align: center;
-    display: inline;
-    border-bottom: solid blue 1px;
-
-}
-li{
-    list-style-type: none;
-    padding: 35px;
-    font-size: 30px;
-    word-spacing: 200px;
-    height: 15%;
-}
-img.watermark{
-    position: absolute;
     width: 100px;
-    height: 50px;
-    right: 50px;
-    bottom: 120px;
-    opacity: .3;
+    display: inline;
+    font-size: 18px;
+    border-bottom: gray 1px solid;
+}
+section.info article.experience{
+    flex-basis: 600px;
+    position: relative;
+}
+section.info article.experience h1{
+
+    margin-bottom: 0;
+    margin-top: 5%;
+    font-size: 24px;
+}
+section.info article.experience h2{
+    font-weight: normal;
+    font-style: italic;
+    margin: 0;
+    font-size: 18px;
+}
+
+.work-years{
+    position: absolute;
+    right: 0px;
+    top: 5%;
+}
+@media screen and (max-width:800px) {
+    nav{
+        display: none;
+    }
+    header, main, footer {
+        margin-left: 0%;
+    }
+
 }
